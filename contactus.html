@@ -9,6 +9,7 @@ p    {color: red;}
 </style>
 </head>
 <body>
+
   <main>
 
     <header>
@@ -30,24 +31,33 @@ p    {color: red;}
           <hr/>
           </nav>
           <section>
-            <form action="submit.html" method="post">
-              <label for="Name"> Name:</label><br/>
-              <input type="text" id="Name" name="firstName"><br/>
-              <label for="Email">email:</label><br/>
-              <input type="email" id="Email" Name="Email"><br/>
-              <label for="phone">Telephone:</label><br/>
-              <input type="phone"id=Telephone" name="phone"><br/>
-              <lable for="Inquiry"> Reason for Inquiry:</lable><br/>
-              <select id="Inquiry"Name="Reason for Inquiry">
-                <option value="default"selected>--Catering--</option>
-                <option value="Party">Private Party</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Other">Other</option>
+            <form>
+              <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label for="Telephone">Telephone</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label for="Email id">Email address</label>
+                <input type="email" class="form-control" id="Email address" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="Reason for Inquiry">Reason for Inquiry</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Catering</option>
+                  <option>Private Party</option>
+                  <option>Feedback</option>
+                  <option>Other</option>
                 </select>
-                </form>
 
-              <label for="info">Additional Information</label><br/>
+                <div class="form-group">
+              <label for="info">Additional Information</label/>
               <textarea id="info" name="info"></textarea><br/>
+            </div>
+              </form>
 
   <form action="fakepage.html" method="POST">
     <legend>Have you been to the Restaurant</legend><br/>
